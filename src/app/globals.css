@@ -2,10 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@layer base {
+  :root {
+    --background-color: #0d0d0d;
+    --logo-color: #595959;
+    --title-primary: #262626;
+    --title-primary-dark: #d9d0c7;
+    --button-color: #f2bf5e;
+    --paragraph-color: #595959;
+    --paper-color: #262626;
+  }
+}
+
+body {
+  font-family: "Inter", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,14 +26,4 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
