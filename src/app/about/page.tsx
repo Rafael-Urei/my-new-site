@@ -1,6 +1,11 @@
+"use client";
+
 import Divider from "@/shared/components/Divider";
+import { useIcons } from "@/shared/hooks/useIcon";
+import TypeScriptIcon from "@/shared/icons/typescript";
 
 export default function About() {
+  const { icons } = useIcons();
   return (
     <>
       <section className="p-10 max-w-md mx-auto rounded-xl overflow-hidden md:max-w-full text-slate-700 dark:text-[var(--title-primary-dark)]">
@@ -39,11 +44,11 @@ export default function About() {
         </div>
       </section>
       <Divider />
-      <section className="flex flex-col gap-10 p-10 max-w-md mx-auto text-slate-800 dark:text-[var(--title-primary-dark)] bg-white dark:bg-zinc-700 overflow-hidden md:max-w-full">
+      <section className="flex flex-col gap-20 p-10 max-w-md mx-auto text-slate-800 dark:text-[var(--title-primary-dark)] bg-white dark:bg-zinc-700 overflow-hidden md:max-w-full">
         <h1 className="self-center font-semibold text-lg dark:text-zinc-100">
           Skills
         </h1>
-        <div className="flex flex-col gap-6 items-center">
+        <div className="flex flex-col gap-10 items-center">
           <h2 className="font-medium dark:text-zinc-200">Soft Skills</h2>
           <p className="text-sm tracking-wider">
             Sou uma pessoa resiliente, com princípios éticos, com inteligẽncia
@@ -51,16 +56,26 @@ export default function About() {
             e mais, também sou positivo e relativamente criativo.
           </p>
         </div>
-        <div className="flex flex-col gap-6 items-center">
+        <div className="flex flex-col gap-10 items-center">
           <h2 className="font-medium dark:text-zinc-200">Hard Skills</h2>
-          <div className="flex flex-col items-center text-sm">
-            {/* {icons.map((icon) => {
+          <div className="flex items-center text-sm gap-6">
+            {icons.map((icon) => {
               return (
-                <Item key={icon.id} type="button" title={icon.title}>
-                  {icon.icon}
-                </Item>
+                <div className="flex flex-col items-center justify-between gap-4">
+                  <button
+                    className="bg-sky-600 dark:bg-[var(--background-color)] p-5 rounded-full flex items-center justify-center"
+                    key={icon.id}
+                    type="button"
+                    title={icon.title}
+                  >
+                    {icon.icon}
+                  </button>
+                  <p className="font-semibold">{icon.title}</p>
+                </div>
               );
-            })} */}
+            })}
+          </div>
+          <div className="flex flex-col items-center justify-center font-medium tracking-wider text-sm">
             <p>Inglês: Avançado</p>
             <p>Russo: Básico</p>
           </div>

@@ -1,6 +1,8 @@
+import Navbar from "@/shared/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,35 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="dark:bg-zinc-700">{children}</body>
+      <body className="dark:bg-zinc-700">
+        <header className="flex items-center justify-center h-14 shadow-md mb-10 dark:bg-zinc-800">
+          <Navbar>
+            <ul className="flex gap-10 font-semibold text-zinc-600 dark:text-zinc-100">
+              <li>
+                <Link href="/" target="_parent">
+                  Início
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" target="_parent">
+                  Sobre
+                </Link>
+              </li>
+              <li>
+                <Link href="/projetos" target="_parent">
+                  Projetos
+                </Link>
+              </li>
+              <li>
+                <Link href="/contatos" target="_parent">
+                  Contatos
+                </Link>
+              </li>
+            </ul>
+          </Navbar>
+        </header>
+        {children}
+      </body>
     </html>
   );
 }
