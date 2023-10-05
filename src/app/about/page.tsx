@@ -1,8 +1,6 @@
 "use client";
 
-import Divider from "@/shared/components/Divider";
 import { useIcons } from "@/shared/hooks/useIcon";
-import TypeScriptIcon from "@/shared/icons/typescript";
 
 export default function About() {
   const { icons } = useIcons();
@@ -43,7 +41,6 @@ export default function About() {
           </article>
         </div>
       </section>
-      <Divider />
       <section className="flex flex-col gap-20 p-10 max-w-md mx-auto text-slate-800 dark:text-[var(--title-primary-dark)] bg-white dark:bg-zinc-700 overflow-hidden md:max-w-full">
         <h1 className="self-center font-semibold text-lg dark:text-zinc-100">
           Skills
@@ -58,10 +55,13 @@ export default function About() {
         </div>
         <div className="flex flex-col gap-10 items-center">
           <h2 className="font-medium dark:text-zinc-200">Hard Skills</h2>
-          <div className="flex items-center text-sm gap-6">
+          <div className="md:flex items-center text-sm gap-6">
             {icons.map((icon) => {
               return (
-                <div className="flex flex-col items-center justify-between gap-4">
+                <div
+                  key={icon.id}
+                  className="flex flex-col items-center justify-between gap-4 md:mb-0 mb-3"
+                >
                   <button
                     className="bg-sky-600 dark:bg-[var(--background-color)] p-5 rounded-full flex items-center justify-center"
                     key={icon.id}
@@ -79,6 +79,27 @@ export default function About() {
             <p>Inglês: Avançado</p>
             <p>Russo: Básico</p>
           </div>
+        </div>
+        <div className="flex flex-col items-center justify-center gap-6">
+          <h2 className="font-medium dark:text-zinc-200">
+            Experiências Profissionais
+          </h2>
+          <ul>
+            <li>
+              Laboratório Santa Cruz - Auxiliar de laboratório. Duração: 1 ano e
+              5 meses.
+            </li>
+          </ul>
+        </div>
+        <div className="flex flex-col items-center justify-center gap-6">
+          <h2 className="font-medium dark:text-zinc-200">Formação Acadêmica</h2>
+          <ul>
+            <li>Ensino Médio Completo - Término em 2018.</li>
+            <li>
+              Curso Técnico - Ténico em Informática - Completo 1200 horas..
+            </li>
+            <li>Ensino Superior - Ciência da Computação - Cursando.</li>
+          </ul>
         </div>
       </section>
     </>

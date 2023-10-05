@@ -1,22 +1,21 @@
 import { InstagramIcon, LinkedinIcon } from "lucide-react";
+import Link from "next/link";
 
-export default function Contacts() {
+export default function About() {
   return (
-    <div className="flex justify-center items-center gap-4">
-      <div className="flex flex-col items-center justify-center gap-4 cursor-pointer">
-        <div className="flex flex-col items-center justify-center border-2 rounded-full h-32 w-32 gap-6 text-slate-400">
-          <InstagramIcon />
-        </div>
-        <h2 className="font-semibold text-slate-500 tracking-wide">
-          Instagram
-        </h2>
-      </div>
-      <div className="flex flex-col items-center justify-center gap-4 cursor-pointer">
-        <div className="flex flex-col items-center justify-center border-2 rounded-full h-32 w-32 gap-6 text-slate-400">
+    <>
+      <Link className="m-10" href="#">
+        <div className="flex flex-col items-center justify-center bg-slate-200 h-32 w-32 rounded-full duration-300 hover:bg-sky-300 hover:text-slate-50 font-semibold gap-3">
           <LinkedinIcon />
+          <h2>Linkedin</h2>
         </div>
-        <h2 className="font-semibold text-slate-500 tracking-wide">Linkedin</h2>
-      </div>
-    </div>
+      </Link>
+      <Link className="m-10" href="#">
+        <div className="flex flex-col items-center justify-center bg-slate-200 h-32 w-32 rounded-full duration-300 hover:bg-pink-300 hover:text-slate-50 font-semibold gap-3">
+          <InstagramIcon />
+          <h2>Instagram</h2>
+        </div>
+      </Link>
+    </>
   );
 }

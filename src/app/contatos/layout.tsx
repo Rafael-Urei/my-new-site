@@ -10,10 +10,10 @@ export default function ContactsLayout({ children }: Props) {
     <>
       <SectionTitle>
         <h1 className="text-2xl text-[var(--title-primary)] font-bold dark:text-zinc-200">
-          Contacts
+          Contacts Section
         </h1>
       </SectionTitle>
-      <main className="bg-white dark:bg-zinc-800 mt-10 flex items-center justify-center">
+      <main className=" dark:bg-zinc-800 mt-10 flex h-screen justify-center">
         {children}
       </main>
     </>

@@ -1,14 +1,10 @@
+"use client";
+
 import SectionTitle from "@/shared/components/Title";
-import { Metadata } from "next";
 import { ReactNode } from "react";
 
 type Props = {
   children: ReactNode;
-};
-
-export const metadata: Metadata = {
-  title: "Sobre mim",
-  description: "Descrição sobre mim, minhas skills e meus objetivos.",
 };
 
 export default function AboutLayout({ children }: Props) {

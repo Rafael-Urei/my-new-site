@@ -1,3 +1,5 @@
+"use client";
+
 import SectionTitle from "@/shared/components/Title";
 import { ReactNode } from "react";
 
