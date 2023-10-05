@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="dark:bg-zinc-700">
-        <header className="flex items-center justify-center h-14 shadow-md mb-10 dark:bg-zinc-800">
+        <header className="flex items-center justify-center h-14 shadow-md shadow-slate-100 mb-10 dark:bg-zinc-800">
           <Navbar>
             <ul className="flex gap-10 font-semibold text-zinc-600 dark:text-zinc-100">
               <li>
