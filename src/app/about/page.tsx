@@ -11,6 +11,7 @@ export default function About() {
           <picture className="md:shrink-0 rounded-md">
             <img
               className="rounded-md"
+              alt="profile"
               src="https://picsum.photos/536/354"
             ></img>
           </picture>

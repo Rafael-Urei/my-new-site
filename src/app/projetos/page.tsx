@@ -10,7 +10,7 @@ export default function Projects() {
       <div className="">
         {projects.map((project) => {
           return (
-            <Paper>
+            <Paper key={project.id}>
               <Image
                 src={project.img.src}
                 alt="anything"

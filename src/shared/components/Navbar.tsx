@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import "../../app/globals.css";
-import { ReactNode } from "react";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
