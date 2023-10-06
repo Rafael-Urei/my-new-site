@@ -81,24 +81,30 @@ export default function About() {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center gap-6">
-          <h2 className="font-medium dark:text-zinc-200">
+          <h2 className="self-center font-semibold text-lg dark:text-zinc-100">
             Experiências Profissionais
           </h2>
           <ul>
-            <li>
+            <li className="text-sm tracking-wider">
               Laboratório Santa Cruz - Auxiliar de laboratório. Duração: 1 ano e
               5 meses.
             </li>
           </ul>
         </div>
         <div className="flex flex-col items-center justify-center gap-6">
-          <h2 className="font-medium dark:text-zinc-200">Formação Acadêmica</h2>
+          <h2 className="self-center font-semibold text-lg dark:text-zinc-100">
+            Formação Acadêmica
+          </h2>
           <ul>
-            <li>Ensino Médio Completo - Término em 2018.</li>
-            <li>
+            <li className="text-sm tracking-wider">
+              Ensino Médio Completo - Término em 2018.
+            </li>
+            <li className="text-sm tracking-wider">
               Curso Técnico - Ténico em Informática - Completo 1200 horas..
             </li>
-            <li>Ensino Superior - Ciência da Computação - Cursando.</li>
+            <li className="text-sm tracking-wider">
+              Ensino Superior - Ciência da Computação - Cursando.
+            </li>
           </ul>
         </div>
       </section>

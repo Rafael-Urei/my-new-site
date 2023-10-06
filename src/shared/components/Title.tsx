@@ -5,5 +5,5 @@ type Props = {
 };
 
 export default function SectionTitle({ children }: Props) {
-  return <div className="flex justify-center">{children}</div>;
+  return <div className="flex justify-center items-center">{children}</div>;
 }
