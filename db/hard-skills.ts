@@ -1,8 +1,19 @@
 const projects = [
   {
     id: 1,
+    url: "https://github.com/Rafael-Urei/challenge-ecommerce",
+    siteUrl: "https://challenge-ecommerce-theta.vercel.app/",
+    title: "E-commerce Frontend Mentor.",
+    tools: "React, TypeScript, NextJS",
+    img: { src: "/images/ecommerce.png", alt: "Projeto Credit Card Form" },
+    inverted: true,
+    description:
+      "Um projeto simples, se trata de um E-commerce, desafio proposto pelo Frontend Mentor.",
+  },
+  {
+    id: 2,
     url: "https://github.com/Rafael-Urei/Firebase-TodoList",
-    siteUrl: "",
+    siteUrl: "https://stunning-scone-3ff4e2.netlify.app/",
     title: "Projeto de Login e To do List.",
     tools: "React, TypeScript, Firebase, TailwindCSS, React-Hook-Form e Zod.",
     img: { src: "/images/todolist.png", alt: "Projeto Todolist Dashboard" },
@@ -11,7 +22,7 @@ const projects = [
       "Este projeto se trata de uma To Do List, na qual você consegue se cadastrar, alterar suas informações, como: Foto de Perfil, Nome, Email, Senha, etc. E também consegue armazenar suas tasks, filtra-las por tipos, data, finalizadas ou não finalizadas. O Projeto contém uma área de dashboard, onde o usuário consegue visualizar todas as tasks, e as que estão por vir. Não foi um projeto difícil em sí, porém teve várias funcionalidades, rsrs.",
   },
   {
-    id: 2,
+    id: 3,
     url: "https://github.com/Rafael-Urei/firebase-login-project",
     siteUrl: "https://leafy-pie-6d5299.netlify.app/",
     title: "Projeto Login Firebase.",
@@ -22,7 +33,7 @@ const projects = [
       "Um projeto simples, apenas para treinar as bibliotecas e frameworks, possui um sistema de autenticação e registro.",
   },
   {
-    id: 3,
+    id: 4,
     url: "https://github.com/Rafael-Urei/DashBoard-Project-JSON-Server",
     siteUrl: "",
     title: "Projeto Sistema de Gerenciamento de Laboratório.",
@@ -36,7 +47,7 @@ const projects = [
       "Um dos projetos mais complexos, se trata de um sistema de gerenciamento de laboratório, onde é possível cadastrar pacientes e seus exames, visualizar o dashboard com gráficos de diversas informações sobre pacientes e lucro.",
   },
   {
-    id: 4,
+    id: 5,
     url: "https://github.com/Rafael-Urei/card-interactive-ReactJS",
     siteUrl: "https://super-caramel-7241f7.netlify.app/",
     title: "Projeto Interactive Card.",
