@@ -16,7 +16,7 @@ export default function Projects() {
                 alt="anything"
                 width={536}
                 height={354}
-                className="rounded-md opacity-30 duration-300 hover:opacity-100"
+                className="rounded-md opacity-50 duration-300 hover:opacity-100 border-2"
               ></Image>
               <div className="md:flex md:flex-col md:gap-4 flex flex-col gap-6 md:mt-4 mt-6 text-slate-500 dark:text-slate-200">
                 <h1 className="font-semibold text-slate-700 dark:text-slate-200 text-2xl">
